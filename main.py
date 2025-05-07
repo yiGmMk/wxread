@@ -67,6 +67,8 @@ def refresh_cookie():
         push(ERROR_CODE, PUSH_METHOD)
         raise Exception(ERROR_CODE)
 
+logging.info(f"🍪 任务开始,READ_NUM={READ_NUM}")
+
 refresh_cookie()
 index = 1
 lastTime = int(time.time()) - 30
